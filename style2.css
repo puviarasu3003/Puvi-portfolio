@@ -573,9 +573,11 @@ html {
     opacity: 1;
   }
 }
-@media (max-width:414px){
-.puviphotos{
-  margin-left:5%;
+@media (max-width:415px) {
+  .puviphotoss{
+    margin-left: 7%;
+  }
+  
 }
 @keyframes aboutin {
   from {
