@@ -573,6 +573,10 @@ html {
     opacity: 1;
   }
 }
+@media (max-width:414px){
+.puviphotos{
+  margin-left:5%;
+}
 @keyframes aboutin {
   from {
     transform: translateX(-100%);
