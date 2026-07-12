@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puviarasu L — Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #031d2e;
+            --bg-secondary: #062a3e;
+            --accent-primary: #2dfbfb;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --accent-gradient: linear-gradient(135deg, #2dfbfb 0%, #6c63ff 100%);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(6, 42, 62, 0.4);
+            border: 1px solid var(--border-glass);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-glass);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: var(--accent-primary);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .contact-info a {
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: var(--accent-primary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border-glass);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        p, li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            color: var(--text-primary);
+        }
+        .item-date {
+            color: var(--accent-primary);
+            font-size: 0.9rem;
+        }
+        .bullet-list {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        .bullet-list li {
+            margin-bottom: 5px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .skill-category strong {
+            color: var(--text-primary);
+        }
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+        }
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid var(--border-glass);
+            color: var(--text-primary);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(45, 251, 251, 0.2);
+        }
+        @media (max-width: 600px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+        @media print {
+            body {
+                background: white;
+                color: black;
+                padding: 0;
+            }
+            .container {
+                background: transparent;
+                border: none;
+                padding: 0;
+                box-shadow: none;
+            }
+            .actions {
+                display: none;
+            }
+            .item-title, h2, .subtitle, p, li {
+                color: black !important;
+            }
+            h2 {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="actions">
+        <button class="btn btn-primary" onclick="window.print()">Print / Save PDF</button>
+        <a href="index.html" class="btn btn-secondary">Back to Portfolio</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>PUVIARASU L</h1>
+            <div class="subtitle">Web Developer (Freelance)</div>
+            <div class="contact-info">
+                Pondicherry, India | +91 82483 91050 | <a href="mailto:puviarasulenin@gmail.com">puviarasulenin@gmail.com</a>
+            </div>
+        </div>
+
+        <h2>Summary</h2>
+        <p>Second-year Electrical and Electronics Engineering student who is self-taught in web development and focused on a career in software. Builds and freelances on full-stack e-commerce applications using HTML, CSS, JavaScript, and Supabase, working alongside AI-assisted development workflows to design, build, and ship complete applications end to end — from database schema to deployment.</p>
+
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <p><strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+), SQL</p>
+                <p><strong>Frontend:</strong> Responsive design, vanilla JS SPA architecture, DOM management</p>
+                <p><strong>Backend & Data:</strong> Supabase (Auth, Postgres, RLS, Edge Functions), REST APIs</p>
+            </div>
+            <div class="skill-category">
+                <p><strong>AI-Assisted Dev:</strong> Rapid prototyping, application architecture workflows</p>
+                <p><strong>Tooling & Deploy:</strong> Git/GitHub, Vercel, Chrome DevTools</p>
+                <p><strong>Practices:</strong> Access control (RBAC), XSS prevention, basic security auditing</p>
+            </div>
+        </div>
+
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="item-title">Freelance Web Developer — Self-Employed</span>
+                <span class="item-date">2026 – Present</span>
+            </div>
+            <p style="font-style: italic;">Pondicherry, India (Remote)</p>
+            <ul class="bullet-list">
+                <li>Designed and built <a href="https://mrponline.vercel.app" target="_blank" style="color: var(--accent-primary); text-decoration: underline;">MRP Men's Wear</a>, a full-stack e-commerce web app for a men's clothing retailer, from a single-file localStorage prototype into a Supabase- and Razorpay-backed production system.</li>
+                <li>Implemented customer authentication (email/password and Google Sign-In via PKCE flow) with RLS-scoped order history, replacing an insecure localStorage-based session model.</li>
+                <li>Built and deployed Razorpay payment Edge Functions (create-order, verify-payment) with HMAC-SHA256 signature verification to prevent client-side payment tampering.</li>
+                <li>Hardened the admin panel with role-based access gating and centralized output escaping to close stored XSS vulnerabilities.</li>
+                <li>Conducted a full codebase security audit, identifying and prioritizing fixes for payment integrity, an RLS policy exposing customer PII, and admin-panel XSS.</li>
+                <li>Built an Instagram comment-to-DM automation pipeline (Meta Graph API, webhooks, Supabase Edge Functions) to auto-reply to product-post comments with matching product links.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="item-title">Independent Project — Weekend Coffee</span>
+                <span class="item-date">2026</span>
+            </div>
+            <p style="font-style: italic;"><a href="https://weekend-coffee.vercel.app" target="_blank" style="color: var(--accent-primary);">weekend-coffee.vercel.app</a></p>
+            <ul class="bullet-list">
+                <li>Built a coffee shop ordering site as a learning project to master Supabase backend design and Razorpay payment flows from first principles, deployed on Vercel.</li>
+            </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="project-item">
+            <div class="item-header">
+                <span class="item-title">MRP Men's Wear — E-Commerce Platform</span>
+            </div>
+            <ul class="bullet-list">
+                <li>Vanilla JS SPA, Supabase (Postgres + Auth + Edge Functions), Razorpay, Vercel — product catalog with MRP/discount pricing, cart & checkout, customer accounts, order history, admin dashboard, Instagram auto-DM integration.</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <div class="experience-item">
+            <div class="item-header">
+                <span class="item-title">B.Tech, Electrical and Electronics Engineering (2nd Year)</span>
+                <span class="item-date">2025 – 2029 (Expected)</span>
+            </div>
+            <p style="font-style: italic;">Puducherry Technological University</p>
+            <ul class="bullet-list">
+                <li>Self-directed focus on software development alongside coursework.</li>
+                <li>Additional: self-directed study in web security fundamentals (XSS prevention, RLS policy design, payment verification integrity).</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
